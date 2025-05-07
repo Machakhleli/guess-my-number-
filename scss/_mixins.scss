@@ -1,0 +1,20 @@
+@mixin flexContent($justifyContent, $alignItem) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItem;
+}
+@mixin verticalFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+@misssssssssssssssxin button($width, $height, $backgroundColor, $border) {
+  width: $width;
+  height: $height;
+  background-color: $backgroundColor;
+  border: $border;
+}
+@mixin fonts($fontWeight, $fontSize) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+}
