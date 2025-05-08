@@ -3,12 +3,16 @@
   justify-content: $justifyContent;
   align-items: $alignItem;
 }
+@mixin boxSize($width, $height) {
+  width: $width;
+  height: $height;
+}
 @mixin verticalFlex {
   display: flex;
   flex-direction: column;
 }
 
-@misssssssssssssssxin button($width, $height, $backgroundColor, $border) {
+@mixin button($width, $height, $backgroundColor, $border) {
   width: $width;
   height: $height;
   background-color: $backgroundColor;

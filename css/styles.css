@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgba(70, 90, 158, 0.397);
+  background-color: rgba(95, 114, 177, 0.397);
 }
 
 #header {
@@ -19,21 +19,50 @@ body {
   align-items: center;
   padding: 1.25rem;
 }
+#header > .header-container > .restart-btn {
+  width: 4.5rem;
+  height: 2.1875rem;
+  background-color: rgba(95, 114, 177, 0.397);
+  border: 0.125rem solid white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.3125rem;
+  color: rgba(56, 32, 13, 0.623);
+  transition: 0.5s;
+  opacity: 0.9;
+}
+#header > .header-container .restart-btn:hover {
+  font-size: 0.8rem;
+  transition-delay: 0.3s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+#header > .header-container > span {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: rgba(56, 32, 13, 0.623);
+}
+#header h1 {
+  padding-top: 3.125rem;
+  color: rgba(56, 32, 13, 0.623);
+}
 
 #main {
   border-top: 0.25rem solid white;
   height: 60vh;
 }
-#main > .guessed-num {
+#main > .secret-num {
   width: 4.375rem;
   height: 4.375rem;
-  background-color: white;
-  margin: -35px auto;
   font-weight: 900;
   font-size: 3.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  color: rgba(56, 32, 13, 0.623);
+  margin: -35px auto 0 auto;
+  border-radius: 0.3125rem;
 }
 #main .main-card-container {
   display: flex;
@@ -44,14 +73,41 @@ body {
 #main .main-card-container > .check-number {
   display: flex;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 0.625rem;
 }
 #main .main-card-container > .check-number > input[type=number] {
   width: 6.25rem;
   height: 3.125rem;
-  border: 2px solid white;
-  background-color: rgba(70, 90, 158, 0.397);
-  text-align: center;
   font-weight: 900;
   font-size: 1.875rem;
+  border: 2px solid white;
+  background-color: rgba(95, 114, 177, 0.397);
+  text-align: center;
+  outline: none;
+  border-radius: 0.3125rem;
+}
+#main .main-card-container > .check-number > .check-btn {
+  width: 4.5rem;
+  height: 2.1875rem;
+  background-color: rgba(95, 114, 177, 0.397);
+  border: 0.125rem solid white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.3125rem;
+  color: rgba(56, 32, 13, 0.623);
+  cursor: pointer;
+}
+#main .main-card-container > .scores {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+#main .main-card-container > .scores p {
+  padding: 0.3125rem;
+  color: rgba(56, 32, 13, 0.623);
+}
+#main .main-card-container > .scores p:first-child {
+  padding: 1rem 0;
 }/*# sourceMappingURL=styles.css.map */
