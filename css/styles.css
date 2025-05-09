@@ -85,6 +85,7 @@ body {
   font-size: 1.875rem;
   border: 2px solid white;
   background-color: rgba(95, 114, 177, 0.397);
+  color: rgba(56, 32, 13, 0.623);
   text-align: center;
   outline: none;
   border-radius: 0.3125rem;
@@ -98,6 +99,11 @@ body {
   font-size: 1rem;
   border-radius: 0.3125rem;
   color: rgba(56, 32, 13, 0.623);
+}
+#main .main-card-container > .check-number .check-btn:hover {
+  font-size: 0.8rem;
+  transition-delay: 0.3s;
+  opacity: 0.8;
   cursor: pointer;
 }
 #main .main-card-container > .scores {

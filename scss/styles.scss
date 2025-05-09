@@ -9,6 +9,7 @@
 
 body {
   background-color: $bgColor;
+  // background-color: rgba(94, 211, 47, 0.61);
 }
 #header {
   @include boxSize(100%, 40vh);
@@ -65,6 +66,7 @@ body {
         @include fonts(900, 1.875rem);
         border: 2px solid $borderColor;
         background-color: $bgColor;
+        color: $textColor;
         text-align: center;
         outline: none;
         border-radius: 0.3125rem;
@@ -79,6 +81,12 @@ body {
         @include fonts(600, 1rem);
         border-radius: 0.3125rem;
         color: $textColor;
+        // cursor: pointer;
+      }
+      & .check-btn:hover {
+        font-size: 0.8rem;
+        transition-delay: 0.3s;
+        opacity: 0.8;
         cursor: pointer;
       }
     }
