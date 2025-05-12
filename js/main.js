@@ -11,7 +11,7 @@ const bodyBg = document.querySelector("body");
 const displayedMsg = document.querySelector(".guessing");
 let storedHighscore = document.querySelector(".highscore");
 let startingScore = 20;
-let startingHighscore = localStorage.getItem("highscore");
+let startingHighscore = localStorage.getItem("highscore"); //get and store higscore number
 storedHighscore.textContent = `🥇 Highscore: ${startingHighscore}`;
 
 let checkInputedNum = document.querySelector(".check-btn");
@@ -39,7 +39,7 @@ checkInputedNum.addEventListener("click", () => {
 
         if (startingScore > startingHighscore) {
             startingHighscore = startingScore;
-            localStorage.setItem("highscore", startingHighscore);
+            localStorage.setItem("highscore", startingHighscore);//set the getted highscore  number
             storedHighscore.textContent = `🥇 Highscore: ${startingHighscore}`;
         }
         if (startingScore == 0) {
@@ -59,7 +59,7 @@ checkInputedNum.addEventListener("click", () => {
     }
 });
 
-//reload a whole page
+//reload whole page
 const restart = document.querySelector(".restart-btn");
 restart.addEventListener("click", () => {
     location.reload();
